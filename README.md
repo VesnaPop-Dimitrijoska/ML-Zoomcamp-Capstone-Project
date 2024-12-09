@@ -4,7 +4,8 @@
 ---
 
 ## **Project Title**  
-**Time Series Forecasting on Web Traffic Data Using ARIMA, SARIMA, and PROPHET**
+**Time Series Forecasting on Web Traffic Data Using ARIMA, SARIMA, and PROPHET**     
+        
 ![alt text](pictures/picture.webp)
 
 ---
@@ -112,9 +113,21 @@ By leveraging time series models, businesses can effectively forecast web traffi
 
 
 ---
-
+#    
 ## **Project Files**
 
+### **Project Folder Structure**    
+
+├── EDA, DataPreprocessing, DataEngineering - WebTraffic - AllDevices.ipynb      
+├── Time Series Forecasting - WebTraffic - AllDevices.ipynb      
+├── train.py      
+├── forecast.py      
+├── Dockerfile      
+├── requirements.txt      
+├── clean_LA_web_traffic.csv      
+├── df_total_final.csv      
+└── best_model.pkl    
+    
 ### **Notebooks**
 1. **`EDA, DataPreprocessing, DataEngineering - WebTraffic - AllDevices.ipynb`**
    - **Content**:
@@ -152,10 +165,13 @@ The project utilizes two datasets:
 The cleaned dataset provides a stable and noise-reduced version of the original data, enabling more effective time series forecasting.     
 **Shape of the dataset:** Nearly 5 years of daily data (2014–2018).
    - **Date**: The date of the observation.  
-   - **Sessions**: The number of web sessions recorded summarised for all devices: **mobile, tablet, and desktop**.  
+   - **Sessions**: The number of web sessions recorded summarised for all devices: **mobile, tablet, and desktop**.
+ 
+### **Pickle File** (best_model.pkl)
+The trained model is saved as best_model.pkl. This file contains the optimized model used for generating forecasts. Due to its size (approximately 27 MB), it was not uploaded here, but you can regenerate the model file by running the train.py script. The model will be saved in the project directory upon execution.
 
 ---
-
+#      
 ## **Preprocessing and EDA**
 
 ### **Handling Outliers**
@@ -173,7 +189,7 @@ Decomposed the web traffic time series into:
 - **Residuals**: Captured random noise after trend and seasonality removal.
 
 ---
-
+#     
 ## **Results**
 
 ### **All Devices**
@@ -209,7 +225,7 @@ The models were evaluated using the following metrics:
 **Note:** These metrics are calculated on the test split of the dataset. In a real forecasting model, such tests can only be done after the forecast period.
 
 ---
-
+#    
 ## **Model Deployment**
 
 ### **Flask API**  
@@ -275,13 +291,13 @@ The project includes a **Dockerfile** for easy deployment.
    docker run -p 5000:5000 web-traffic-forecast
 ```
 ---
-
+#    
 ## **Conclusion**
 This project demonstrates the end-to-end process of time series forecasting using ARIMA, SARIMA, and PROPHET. The models achieved excellent results for cumulative web traffic prediction. The trained model is deployed via a Flask API and containerized for scalability using Docker.
 
 
 ---
-#
+#    
 ## **License**
 MIT License
 #
