@@ -168,7 +168,7 @@ The cleaned dataset provides a stable and noise-reduced version of the original 
    - **Sessions**: The number of web sessions recorded summarised for all devices: **mobile, tablet, and desktop**.
  
 ### **Pickle File** (best_model.pkl)
-The trained model is saved as best_model.pkl. This file contains the optimized model used for generating forecasts. Due to its size (approximately 27 MB), it was not uploaded here, but you can regenerate the model file by running the train.py script. The model will be saved in the project directory upon execution.
+The trained model is saved as best_model.pkl. This file contains the optimized model used for generating forecasts. 
 
 ---
 #      
@@ -193,9 +193,17 @@ Decomposed the web traffic time series into:
 ## **Results**
 
 ### **All Devices**
-![alt text](pictures/image.png)      
-![alt text](pictures/image-1.png)       
+![alt text](pictures/image.png) 
+![alt text](pictures/image-3.png) 
+![alt text](pictures/image-4.png)        
+---  
+![alt text](pictures/image-1.png) 
+![alt text](pictures/image-5.png) 
+![alt text](pictures/image-6.png)  
+---
 ![alt text](pictures/image-2.png)
+![alt text](pictures/image-7.png) 
+![alt text](pictures/image-8.png)  
 
 All models demonstrated **EXCELLENT** performance on the test dataset, as shown through visual predictions and evaluation metrics.
 
