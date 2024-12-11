@@ -87,7 +87,7 @@ Time series forecasting is a specialized type of machine learning problem that d
 2. **Seasonality**: Recurring patterns over fixed periods (e.g., daily, weekly).
 3. **Lagged Features**: Historical values used as predictors for future values.
 4. **Exogenous Variables**: External factors influencing the series (e.g., holidays).
-5. **Evaluation Metrics**: Metrics like MAE, RMSE, and MAPE assess forecast accuracy.
+5. **Evaluation Metrics**: Metrics like MAE, RMSE, R² and MAPE assess forecast accuracy.
 
 #### Models Used in the Project
 
@@ -176,7 +176,6 @@ The trained model is saved as best_model.pkl. This file contains the optimized m
 
 ### **Handling Outliers**
 - Removed extreme outliers and imputed them with the mean.
-- Addressed outliers by replacing problematic values (e.g., `0` values) to avoid introducing new ones after transformations.
 
 ### **Stationarity Testing**
 - Applied transformations (e.g., logarithmic transformations) to make the data stationary.  
